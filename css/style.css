@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: linear-gradient(
+    to right top,
+    #060606,
+    #050504,
+    #030303,
+    #020201,
+    #000
+  );
+  color: #fff;
+  font-size: 62.5%;
+  font-weight: normal;
+}
+
+img {
+  flex-shrink: 0;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 130rem;
+}
+
+.button {
+  border-radius: 5rem;
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+.header {
+  padding: 4rem 11rem 4rem 8rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 10;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 7.1rem;
+}
+
+.header__nav {
+  font-size: 1.6rem;
+}
+
+.header__logo {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+}
+
+.header__button {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  font-size: 1.6rem;
+  margin-left: 55.3rem;
+}
+
+.main-display__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main-display {
+  padding-top: 27rem;
+}
+
+.main-display .container {
+  position: relative;
+  z-index: 10;
+}
+
+.main-display__header {
+  font-size: 6.4rem;
+  margin-bottom: 5rem;
+  max-width: 76rem;
+}
+
+.main-display__timer {
+  display: flex;
+  margin-bottom: 7.6rem;
+}
+
+.main-display__button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  font-size: 1.6rem;
+}
+
+.timer__item {
+  align-items: center;
+  background-color: #121212;
+  display: flex;
+  flex-flow: column;
+  height: 11.2rem;
+  justify-content: center;
+  width: 10.2rem;
+}
+
+.timer__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.timer__count {
+  font-size: 3.6rem;
+}
+
+.timer__text {
+  font-size: 1.6rem;
+  opacity: 0.4;
+}
