@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: bold;
+}
+
 *,
 *::after,
 *::before {
@@ -15,6 +31,7 @@ body {
     #000
   );
   color: #fff;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   font-weight: normal;
 }
@@ -86,6 +103,8 @@ h6 {
 
 .header__nav {
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .header__logo {
@@ -97,6 +116,8 @@ h6 {
 .header__button {
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
   margin-left: 55.3rem;
 }
 
@@ -112,12 +133,14 @@ h6 {
 }
 
 .main-display .container {
+  padding-bottom: 22.8rem;
   position: relative;
   z-index: 10;
 }
 
 .main-display__header {
   font-size: 6.4rem;
+  font-weight: 700;
   margin-bottom: 5rem;
   max-width: 76rem;
 }
@@ -130,6 +153,8 @@ h6 {
 .main-display__button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
   font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 .timer__item {
@@ -148,9 +173,121 @@ h6 {
 
 .timer__count {
   font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 140%;
 }
 
 .timer__text {
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
   opacity: 0.4;
+}
+
+.work {
+  padding-top: 20rem;
+  padding-bottom: 24.3rem;
+}
+
+.work__wrap {
+  display: flex;
+}
+
+.work__img {
+  width: 52.6rem;
+  height: 42.9rem;
+  margin-right: 13.9rem;
+}
+
+.work__text {
+  max-width: 63.6rem;
+  padding-top: 6.9rem;
+}
+
+.work__header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 4.5rem;
+}
+
+.work__description {
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+
+.process {
+  padding-bottom: 20rem;
+  position: relative;
+}
+
+.process__title {
+  align-items: center;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.process__img {
+  height: 12.7rem;
+  width: 12.7rem;
+}
+
+.process__header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.process__description {
+  padding-left: 2.4rem;
+}
+
+.process__description__text {
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 8rem;
+  max-width: 41.1rem;
+  opacity: 0.5;
+}
+
+.process__columns {
+  display: flex;
+}
+
+.process__work,
+.process__work__even {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 6.5rem;
+  position: relative;
+}
+
+.process__work::after {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+  top: 6.5rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 100%;
+}
+
+.process__work__even::after {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+  top: 6.5rem;
+  width: 100%;
+}
+
+.process__text {
+  font-size: 1.4rem;
+  line-height: 160%;
+  max-width: 30.6rem;
+  margin-right: 1.8rem;
+  opacity: 0.5;
 }
