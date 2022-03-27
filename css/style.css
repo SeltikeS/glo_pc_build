@@ -8,7 +8,15 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Bold.ttf");
+  src: url("fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf");
   font-weight: 700;
   font-display: swap;
   font-style: bold;
@@ -70,6 +78,17 @@ h6 {
   width: 130rem;
 }
 
+:root {
+  --text-size-medium: 1.6rem;
+}
+
+.block__center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
 .button {
   border-radius: 5rem;
   color: #fff;
@@ -102,7 +121,7 @@ h6 {
 }
 
 .header__nav {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 150%;
 }
@@ -115,7 +134,7 @@ h6 {
 
 .header__button {
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 150%;
   margin-left: 55.3rem;
@@ -152,18 +171,14 @@ h6 {
 
 .main-display__button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 700;
   line-height: 150%;
 }
 
 .timer__item {
-  align-items: center;
   background-color: #121212;
-  display: flex;
-  flex-flow: column;
   height: 11.2rem;
-  justify-content: center;
   width: 10.2rem;
 }
 
@@ -178,7 +193,7 @@ h6 {
 }
 
 .timer__text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 140%;
   opacity: 0.4;
@@ -212,7 +227,7 @@ h6 {
 }
 
 .work__description {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 
@@ -236,6 +251,7 @@ h6 {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 140%;
+  padding-top: 1rem;
 }
 
 .process__description {
@@ -243,7 +259,7 @@ h6 {
 }
 
 .process__description__text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   margin-bottom: 8rem;
   max-width: 41.1rem;
@@ -290,4 +306,102 @@ h6 {
   max-width: 30.6rem;
   margin-right: 1.8rem;
   opacity: 0.5;
+}
+
+.command {
+  padding-bottom: 20rem;
+}
+
+.command .process__img {
+  transform: rotate(-45deg);
+}
+
+.command__title {
+  margin-bottom: 11.9rem;
+}
+
+.command__header {
+  margin-bottom: 0;
+}
+
+.command__wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.command__img {
+  border-radius: 50%;
+  height: 19rem;
+  width: 19rem;
+  margin-bottom: 4rem;
+}
+
+.command__name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 1.5rem;
+}
+
+.command__profession {
+  font-size: var(--text-size-medium);
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.command__link {
+  border: 0.1rem solid #ffffff;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+}
+
+.assembly {
+  padding-bottom: 24.4rem;
+}
+
+.assembly__header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 3rem;
+}
+
+.assembly__description {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  margin-bottom: 4.52rem;
+  opacity: 0.5;
+}
+
+.assembly__button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 4.08rem;
+}
+
+.assembly__socials {
+  display: flex;
+}
+
+.assembly__item {
+  align-items: center;
+  display: flex;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50%;
+  height: 5rem;
+  justify-content: center;
+  width: 5rem;
+}
+
+.assembly__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.assembly__img {
+  height: 2.4rem;
+  width: 2.4rem;
 }
